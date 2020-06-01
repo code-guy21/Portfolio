@@ -3,21 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/dd5ecc3344.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
   </head>
   <body>
     <header>
       <section class="nav-bar">
         <div class="nav-item">
+          <i state="inactive" id="hammer" class="fas fa-bars"></i>
           <a href="#">ASJ</a>
         </div>
-        <nav>
+        <nav id="nav">
           <div class="nav-item">
             <a href="#">About</a>
           </div>
@@ -39,5 +49,18 @@
       </section>
     </main>
     <footer>Copyright &copy; 2020</footer>
+    <script>
+      $(document).ready(function () {
+        $("#hammer").click(function () {
+          if ($(this).attr("state") === "inactive") {
+            $("#nav").css("display", "flex");
+            $(this).attr("state", "active");
+          } else {
+            $("#nav").css("display", "none");
+            $(this).attr("state", "inactive");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
