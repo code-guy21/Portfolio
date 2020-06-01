@@ -5,9 +5,7 @@
 body {
   height: 100vh;
   font-family: "Roboto", sans-serif;
-  background-image: url("../images/dan-maisey-gljkN5JyWdI-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
+  line-height: 25px;
 }
 
 header {
@@ -58,6 +56,9 @@ a {
 .title-card {
   position: relative;
   min-height: 500px;
+  background-image: url("../images/dan-maisey-gljkN5JyWdI-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .title-card > h1 {
@@ -76,11 +77,28 @@ a {
   width: 80%;
 }
 
-.content {
-  background: white;
-  min-height: 600px;
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
+.content {
+  min-height: 400px;
+  display: flex;
+}
+
+.display {
+  width: 50%;
+  padding: 60px;
+}
+
+.info {
+  width: 50%;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+}
 #hammer {
   color: white;
   float: left;
@@ -101,6 +119,15 @@ a {
 
   #hammer {
     display: initial;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .info,
+  .display {
+    width: 100%;
   }
 }
 
