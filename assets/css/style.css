@@ -56,9 +56,16 @@ a {
 .title-card {
   position: relative;
   min-height: 500px;
-  background-image: url("../images/dan-maisey-gljkN5JyWdI-unsplash.jpg");
   background-position: center;
   background-size: cover;
+}
+
+#about {
+  background-image: url("../images/dan-maisey-gljkN5JyWdI-unsplash.jpg");
+}
+
+#projects {
+  background-image: url("../images/ryan-stone-U3cctUBucn0-unsplash.jpg");
 }
 
 .title-card > h1 {
@@ -78,9 +85,9 @@ a {
 }
 
 img {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .content {
@@ -90,13 +97,17 @@ img {
 
 .display {
   width: 50%;
+  display: flex;
+  justify-content: center;
   padding: 60px;
 }
 
 .info {
   width: 50%;
-  padding: 60px;
   display: flex;
+  font-size: 20px;
+  display: flex;
+  padding: 60px;
   align-items: center;
 }
 #hammer {
@@ -105,7 +116,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1025px) {
   .nav-bar {
     flex-direction: column;
     width: 90%;
@@ -129,10 +140,28 @@ img {
   .display {
     width: 100%;
   }
+
+  .display {
+    padding: 40px;
+  }
+
+  .info {
+    padding: 0px 40px 40px 40px;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1025px) {
   #nav {
     display: flex !important;
+  }
+}
+
+@media screen and (min-width: 1282px) {
+  img {
+    width: 60%;
   }
 }
