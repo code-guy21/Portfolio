@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexis San Javier</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
 
     <script
-      src="https://kit.fontawesome.com/dd5ecc3344.js"
+      src="https://kit.fontawesome.com/ac42345182.js"
       crossorigin="anonymous"
     ></script>
     <script
@@ -26,7 +26,7 @@
       <section class="nav-bar">
         <div class="nav-item">
           <i state="inactive" id="hammer" class="fas fa-bars"></i>
-          <a id="home" href="#about">ASJ</a>
+          <a id="home" href="#about">Alexis San Javier</a>
         </div>
         <nav id="nav">
           <div class="nav-item">
@@ -36,7 +36,7 @@
             <a href="#projects">Projects</a>
           </div>
           <div class="nav-item">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </div>
         </nav>
       </section>
@@ -151,8 +151,50 @@
           </div>
         </div>
       </section>
+
+      <section>
+        <div id="contact" class="title-card">
+          <h1>Contact</h1>
+        </div>
+        <div style="align-items: center;" class="content">
+          <form
+            action="mailto:alexissj16@knights.ucf.edu"
+            method="post"
+            enctype="text/plain"
+          >
+            <input type="text" id="name" name="name" placeholder="Name" />
+            <input type="email" id="email" name="email" placeholder="Email" />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Comment"
+              style="height: 200px;"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
     </main>
-    <footer>Copyright &copy; 2020</footer>
+    <footer class="content">
+      <div class="social">
+        <a class="icon" href="https://www.linkedin.com/in/alexissj/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a class="icon" href="https://github.com/code-guy21"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a class="icon" href="https://twitter.com/codeguy21"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a class="icon" href="https://www.instagram.com/codeguy21/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        Copyright &copy; 2020
+      </div>
+    </footer>
     <script>
       $(document).ready(function () {
         $("#hammer").click(function () {
