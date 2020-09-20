@@ -181,11 +181,11 @@ form {
 }
 
 #hack .project-title {
-  font-size: 60px;
+  font-size: 29px;
 }
 
 #droplet .project-title {
-  font-size: 60px;
+  font-size: 45px;
 }
 .display {
   width: 50%;
@@ -194,6 +194,11 @@ form {
   align-items: center;
   padding: 60px;
   margin-right: 80px;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 .info {
