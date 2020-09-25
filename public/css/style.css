@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   font-family: "Roboto", sans-serif;
@@ -57,6 +61,21 @@ footer {
 a {
   text-decoration: none;
   color: rgb(182, 180, 180);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.contact-info a {
+  color: rgb(6, 0, 0);
+  font-size: 18px;
+}
+
+.contact-info a span {
+  color: rgb(94, 119, 118);
 }
 
 .copyright {
@@ -194,11 +213,6 @@ form {
   align-items: center;
   padding: 60px;
   margin-right: 80px;
-}
-
-html,
-body {
-  overflow-x: hidden;
 }
 
 .info {
