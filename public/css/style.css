@@ -69,12 +69,12 @@ a {
   padding: 30px;
 }
 
-.contact-info a {
+.contact-info * {
   color: rgb(6, 0, 0);
   font-size: 18px;
 }
 
-.contact-info a span {
+.contact-info span {
   color: rgb(94, 119, 118);
 }
 
@@ -200,7 +200,8 @@ form {
 }
 
 #hack .project-title {
-  font-size: 29px;
+  font-size: 35px;
+  padding: 120px 40px;
 }
 
 #droplet .project-title {
