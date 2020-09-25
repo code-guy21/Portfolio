@@ -180,32 +180,56 @@ form {
   background: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
-  border-radius: 20px 20px 0px 0px;
 }
 
 #star-wars .project-title {
   font-family: "star_jedi";
   font-size: 50px;
   line-height: 45px;
+  background: url("../images/starwars.gif");
+  background-size: cover;
+  background-position: center;
 }
 
 #got .project-title {
   font-family: "game_of_thrones";
   font-size: 35px;
   line-height: 45px;
+  background: url("../images/click.gif");
+  background-size: cover;
+  background-position: center;
 }
 
 #giphy .project-title {
   font-size: 60px;
+  background: url("../images/books.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.top-banner {
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
 }
 
 #hack .project-title {
   font-size: 35px;
   padding: 120px 40px;
+  background: url("../images/homebody.gif");
+  background-size: cover;
+  background-position: center;
 }
 
 #droplet .project-title {
   font-size: 45px;
+  background: url("../images/droplet.gif");
+  background-size: cover;
+  background-position: center;
 }
 .display {
   width: 50%;
