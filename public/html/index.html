@@ -1,274 +1,345 @@
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="../images/profile-icon.png" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;400&display=swap"
+			href="https://fonts.googleapis.com/css?family=Crimson+Text:600,600i,700i|Mada:400,500,700|Poppins:300&display=swap"
 			rel="stylesheet"
 		/>
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+			integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
 			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
 		/>
-		<link rel="stylesheet" href="/css/reset.css" />
-		<link rel="stylesheet" href="/css/style.css" />
-		<title>Alexis San Javier</title>
-		<meta
-			name="description"
-			content="Alexis San Javier - Fullstack Web Developer with experience in JavaScript, Node.js, and React. Skilled in building responsive, secure, and intuitive web applications."
-		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="shortcut icon" href="./assets/favicon.ico" />
+		<title>Alexis San Javier: Fullstack Developer</title>
 	</head>
 	<body>
-		<header>
-			<section class="nav-bar">
-				<div class="nav-item">
-					<i state="inactive" id="hammer" class="fas fa-bars"></i>
-					<a id="home" href="#about">Alexis San Javier</a>
-				</div>
-				<nav id="nav">
-					<div class="nav-item">
-						<a href="#about">About</a>
-					</div>
-					<div class="nav-item">
-						<a href="#projects">Projects</a>
-					</div>
-					<div class="nav-item">
-						<a href="#contact">Contact</a>
-					</div>
-					<div class="nav-item">
-						<a href="../files/Resume.pdf" target="_blank">Resume</a>
-					</div>
+		<!------ HEADER ------>
+		<header class="home container-outer" id="home">
+			<div class="wrapper">
+				<nav>
+					<input type="checkbox" id="hamburger" name="hamburger" />
+					<label for="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+
+					<ul>
+						<li><a href="#home" aria-label="go to home section.">Home</a></li>
+						<li>
+							<a href="#about" aria-label="go to about section.">About</a>
+						</li>
+						<li>
+							<a
+								href="#skills-tools"
+								aria-label="go to skills and tools section."
+								>Skills & Tools</a
+							>
+						</li>
+						<li><a href="#work" aria-label="go to work section.">Work</a></li>
+						<li>
+							<a href="#testimonials" aria-label="go to testimonials section."
+								>Testimonials</a
+							>
+						</li>
+						<li>
+							<a href="#contact" aria-label="go to contact section.">Contact</a>
+						</li>
+					</ul>
 				</nav>
-			</section>
+
+				<h1>
+					Hi, I'm Alexis San Javier!<br />
+					I'm a <span class="title">Fullstack Developer</span> and
+					<span class="container-flip">
+						<span class="flip flip-react-dev">React Developer.</span>
+						<span class="flip flip-js-wiz">JavaScript Wizard.</span>
+						<span class="flip flip-secure-coder">Secure Code Advocate.</span>
+						<span class="flip flip-ui-designer">UI Enthusiast.</span>
+						<span class="flip flip-problem-solver">Problem Solver.</span>
+					</span>
+				</h1>
+			</div>
 		</header>
+		<div class="angle angle1"></div>
+
 		<main>
-			<section>
-				<div id="about" class="title-card">
-					<h1>About</h1>
-				</div>
-				<div id="about-content" class="content">
-					<div id="profile" class="display">
-						<img src="/images/profile.jpg" alt="profile" />
-					</div>
-					<div id="bio" class="info">
-						<div class="text">
+			<!------ ABOUT SECTION ------>
+			<section class="about" id="about">
+				<div class="wrapper">
+					<h2>About Me</h2>
+					<div class="container-content">
+						<div class="container-img-profile">
+							<img
+								src="../images/profile.jpg"
+								alt="head-shot of Alexis San Javier"
+							/>
+						</div>
+						<div class="container-text">
+							<h4>
+								A full-stack developer with a passion for clean code and
+								intuitive user experiences.
+							</h4>
 							<p>
-								My name is Alexis San Javier. I was born in Mexico, but I have
-								lived in the USA, specifically Florida, for most of my life.
+								My journey began with a degree in Computer Engineering from the
+								University of Central Florida, leading me through roles as a
+								research technician and educator, eventually focusing on web
+								development. I’ve built applications that enhance user
+								interaction with responsive, secure, and scalable solutions.
+								Currently, I'm refining my skills in React, Node.js, and more to
+								bring ideas to life.
 							</p>
-							<br />
-							<p>
-								I grew up in Lakeland, and after graduating from high school, I
-								attended the University of Central Florida. In 2017, I graduated
-								with a BS in Computer Engineering. After graduation, I worked as
-								a research technician and as an instructor at an after-school
-								academy teaching children how to program microcontrollers.
-							</p>
-							<br />
-							<p>
-								I’ve evolved from teaching and research roles to focusing on web
-								development. Recently, I’ve completed significant projects like
-								VibeStream, which showcases my expertise in React, MongoDB, and
-								Node.js. I’m currently seeking a full-time software engineering
-								role where I can contribute my skills in building cutting-edge,
-								responsive, and secure web applications.
-							</p>
+							<div class="container-txt-link">
+								<a href="#contact" class="u-line">Get in touch!</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section>
-				<div id="projects" class="title-card">
-					<h1>Projects</h1>
-				</div>
+			<div class="angle angle2"></div>
 
-				<!-- VibeStream Project -->
-				<div id="vibestream" class="content">
-					<div class="display">
-						<div class="top-banner">VibeStream</div>
-						<div class="project-title"></div>
-						<div class="banner">
-							<div>
-								<a href="https://vibe-stream.net/"
-									><i class="fas fa-play icon"></i
-								></a>
-							</div>
-							<div>
-								<a href="https://github.com/code-guy21/VibeStream"
-									><i class="fab fa-github icon"></i
-								></a>
+			<!------ SKILLS & TOOLS SECTION ------>
+			<section class="skills-tools" id="skills-tools">
+				<div class="wrapper">
+					<h2 class="light">Skills & Tools</h2>
+					<h3>My toolbox & things I can do</h3>
+					<p>
+						The skills, tools, and technologies I use to bring your projects to
+						life:
+					</p>
+					<div class="container-icons">
+						<div class="box-icon">
+							<i class="devicon devicon-html5-plain" aria-hidden="true"></i>
+							<p>HTML5</p>
+						</div>
+						<div class="box-icon">
+							<i class="devicon devicon-css3-plain" aria-hidden="true"></i>
+							<p>CSS3</p>
+						</div>
+						<div class="box-icon">
+							<i class="fab fa-js" aria-hidden="true"></i>
+							<p>JavaScript</p>
+						</div>
+						<div class="box-icon">
+							<i class="devicon devicon-react-original" aria-hidden="true"></i>
+							<p>React</p>
+						</div>
+						<div class="box-icon">
+							<i class="devicon devicon-git-plain" aria-hidden="true"></i>
+							<p>Git</p>
+						</div>
+						<div class="box-icon">
+							<i class="devicon devicon-nodejs-plain" aria-hidden="true"></i>
+							<p>Node.js</p>
+						</div>
+						<div class="box-icon">
+							<i class="devicon devicon-mongodb-plain" aria-hidden="true"></i>
+							<p>MongoDB</p>
+						</div>
+					</div>
+
+					<h4>Currently working on:</h4>
+					<p>
+						Expanding my knowledge in advanced React patterns, Node.js back-end
+						architecture, and exploring the latest in cloud computing and
+						microservices.
+					</p>
+				</div>
+			</section>
+			<div class="angle angle3"></div>
+
+			<!------ WORK SECTION ------>
+			<section class="work" id="work">
+				<div class="wrapper">
+					<h2 class="light">Work</h2>
+					<h3>A selection of projects I've built</h3>
+
+					<!--- PROJECT ONE --->
+					<div class="container-work">
+						<div class="container-img">
+							<img
+								src="../images/vibestream.gif"
+								alt="VibeStream project screenshot"
+							/>
+						</div>
+						<div class="container-text">
+							<h4>VibeStream</h4>
+							<p>
+								Web application that synchronizes music playback with an
+								animated 3D scene.
+							</p>
+							<div class="container-work-btns">
+								<a
+									href="https://vibe-stream.net"
+									target="_blank"
+									aria-label="open link to VibeStream website."
+									class="btn btn-view-work"
+								>
+									<span>View it here</span>
+									<i class="fas fa-external-link-alt" aria-hidden="true"></i>
+								</a>
+								<a
+									href="https://github.com/code-guy21/VibeStream"
+									target="_blank"
+									aria-label="open link to VibeStream GitHub repo."
+									class="btn btn-view-work"
+								>
+									<span>View GitHub Repo</span>
+									<i class="fas fa-external-link-alt" aria-hidden="true"></i>
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="info">
-						<p>
-							Web application that synchronizes music playback with an animated
-							3D scene, enhancing user experience. Built with Node.js, Express,
-							MongoDB, Passport, React, Redux, Babylon.js, and Spotify API.
-						</p>
-					</div>
-				</div>
 
-				<!-- Droplet Project -->
-				<div id="droplet" class="content">
-					<div class="display">
-						<div class="top-banner">Droplet</div>
-						<div class="project-title"></div>
-						<div class="banner">
-							<div>
-								<a href="https://github.com/code-guy21/droplet"
-									><i class="fab fa-github icon"></i
-								></a>
+					<!--- ADDITIONAL PROJECTS... -->
+				</div>
+			</section>
+			<div class="angle angle4"></div>
+
+			<!------ TESTIMONIALS SECTION ------>
+			<section class="testimonials" id="testimonials">
+				<div class="wrapper">
+					<h2>Testimonials</h2>
+					<h3>Nice things people have said</h3>
+					<div class="container-testimonials">
+						<!--- TESTIMONIAL ONE -->
+						<div class="container-testimonial">
+							<div class="container-person">
+								<div class="container-img-profile">
+									<img
+										src="./assets/profile-john.jpg"
+										alt="head-shot of John Doe."
+									/>
+								</div>
+								<p>John Doe, CEO, XYZ Corp</p>
+							</div>
+							<div class="container-text">
+								<p>
+									"Alexis is a diligent and skilled developer who brings
+									projects to life with clean, efficient code."
+								</p>
 							</div>
 						</div>
-					</div>
-					<div class="info">
-						<p>
-							A social media web application that allows users to comment on and
-							create text-based posts. Built with jQuery, HTML, CSS, Node,
-							Express, MySQL, and Sequelize.
-						</p>
-					</div>
-				</div>
-
-				<!-- HomeBody Project -->
-				<div id="hack" class="content">
-					<div class="display">
-						<div class="top-banner">HomeBody</div>
-						<div class="project-title"></div>
-						<div class="banner">
-							<div>
-								<a href="https://github.com/code-guy21/Homebody"
-									><i class="fab fa-github icon"></i
-								></a>
-							</div>
-						</div>
-					</div>
-					<div class="info">
-						<p>
-							Web application that auto-generates user workouts based on
-							exercise preferences. Built with React, Node, Express, Mongoose,
-							MongoDB, Passport, and Cookie-Session.
-						</p>
-					</div>
-				</div>
-
-				<!-- Star Wars Project -->
-				<div id="star-wars" class="content">
-					<div class="display">
-						<div class="top-banner">Star Wars</div>
-						<div class="project-title"></div>
-						<div class="banner">
-							<div>
-								<a href="https://code-guy21.github.io/Star-Wars-RPG/"
-									><i class="fas fa-play icon"></i
-								></a>
-							</div>
-							<div>
-								<a href="https://github.com/code-guy21/Star-Wars-RPG"
-									><i class="fab fa-github icon"></i
-								></a>
-							</div>
-						</div>
-					</div>
-					<div class="info">
-						<p>A Star-Wars themed RPG built using HTML, CSS, and jQuery.</p>
-					</div>
-				</div>
-
-				<!-- Click Game Project -->
-				<div id="got" class="content">
-					<div class="display">
-						<div class="top-banner">Click Game</div>
-						<div class="project-title"></div>
-						<div class="banner">
-							<div>
-								<a href="https://clickygame.onrender.com/"
-									><i class="fas fa-play icon"></i
-								></a>
-							</div>
-							<div>
-								<a href="https://github.com/code-guy21/ClickyGame"
-									><i class="fab fa-github icon"></i
-								></a>
-							</div>
-						</div>
-					</div>
-					<div class="info">
-						<p>
-							A click game built using React that is themed around Adventure
-							Time.
-						</p>
+						<!--- ADDITIONAL TESTIMONIALS... -->
 					</div>
 				</div>
 			</section>
-			<section>
-				<div id="contact" class="title-card">
-					<h1>Contact</h1>
-				</div>
-				<div class="content">
-					<div class="contact-info">
-						<div><i class="fas fa-phone"></i> <span> 863-513-5577</span></div>
-						<a href="https://www.linkedin.com/in/alexissj/"
-							><i class="fab fa-linkedin-in"></i
-							><span> www.linkedin.com/in/alexissj</span></a
-						>
-						<div>
-							<i class="fas fa-envelope"></i
-							><span> ucfknight2017@gmail.com</span>
+			<div class="angle angle5"></div>
+
+			<!------ CONTACT SECTION ------>
+			<section class="contact" id="contact">
+				<div class="wrapper">
+					<h2>Contact</h2>
+					<h3>Get in touch</h3>
+					<div class="container-content">
+						<div class="container-form">
+							<p>
+								Dropping a line to discuss a project or just to say hi? I'd love
+								to hear from you!
+							</p>
+							<form action="https://formspree.io/f/maybypor" method="POST">
+								<div class="field">
+									<input type="text" name="name" id="name" requiredHere is the
+									continuation of your updated HTML file: placeholder="Your
+									Name">
+									<label for="name">Name<span class="required">*</span></label>
+								</div>
+								<div class="field">
+									<input
+										type="email"
+										name="_replyto"
+										id="email"
+										required
+										placeholder="Your Email"
+									/>
+									<label for="email"
+										>Email<span class="required">*</span></label
+									>
+								</div>
+								<div class="field">
+									<textarea
+										name="message"
+										id="message"
+										required
+										placeholder="Your Message"
+									></textarea>
+									<label for="message"
+										>Message<span class="required">*</span></label
+									>
+								</div>
+								<button class="btn" type="submit" value="send">
+									<span>Send Email</span>
+									<i class="far fa-envelope-open" aria-hidden="true"></i>
+								</button>
+							</form>
+						</div>
+
+						<div class="container-social">
+							<p class="bold">
+								Feeling social? Find me on these platforms too!
+							</p>
+							<div class="container-social-i">
+								<ul>
+									<!-- LinkedIn -->
+									<li>
+										<a
+											href="https://www.linkedin.com/in/alexissj/"
+											target="_blank"
+											aria-label="LinkedIn Profile"
+											><i class="fab fa-linkedin" aria-hidden="true"></i
+											><span class="visually-hidden">LinkedIn</span></a
+										>
+									</li>
+									<!-- GitHub -->
+									<li>
+										<a
+											href="https://github.com/code-guy21"
+											target="_blank"
+											aria-label="GitHub Profile"
+											><i class="fab fa-github" aria-hidden="true"></i
+											><span class="visually-hidden">GitHub</span></a
+										>
+									</li>
+									<!-- Twitter -->
+									<li>
+										<a
+											href="https://twitter.com/codeguy21"
+											target="_blank"
+											aria-label="Twitter Profile"
+											><i class="fab fa-twitter" aria-hidden="true"></i
+											><span class="visually-hidden">Twitter</span></a
+										>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-					<form
-						action="mailto:ucfknight2017@gmail.com"
-						method="post"
-						enctype="text/plain"
-					>
-						<input type="text" id="name" name="name" placeholder="Name" />
-						<input type="email" id="email" name="email" placeholder="Email" />
-						<textarea
-							id="message"
-							name="message"
-							placeholder="Comment"
-							style="height: 200px"
-						></textarea>
-						<input type="submit" value="Submit" />
-					</form>
 				</div>
 			</section>
 		</main>
-		<footer class="content">
-			<div class="social">
-				<a class="icon" href="https://www.linkedin.com/in/alexissj/"
-					><i class="fab fa-linkedin"></i
-				></a>
-				<a class="icon" href="https://github.com/code-guy21"
-					><i class="fab fa-github"></i
-				></a>
-				<a class="icon" href="https://twitter.com/codeguy21"
-					><i class="fab fa-twitter"></i
-				></a>
-				<a class="icon" href="https://www.instagram.com/alexis_sanjavier/"
-					><i class="fab fa-instagram"></i
-				></a>
+
+		<!------ FOOTER ------>
+		<footer>
+			<div class="wrapper">
+				<p>© 2024 | Designed & coded by Alexis San Javier</p>
 			</div>
-			<div class="copyright">Copyright &copy; 2024</div>
 		</footer>
-		<script>
-			$(document).ready(function () {
-				$('#hammer').click(function () {
-					if ($(this).attr('state') === 'inactive') {
-						$('#nav').css('display', 'flex');
-						$(this).attr('state', 'active');
-					} else {
-						$('#nav').css('display', 'none');
-						$(this).attr('state', 'inactive');
-					}
-				});
-			});
-		</script>
+
+		<!------ JAVASCRIPT ------>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
