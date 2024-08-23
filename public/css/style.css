@@ -180,6 +180,62 @@ a {
 	background-size: cover;
 }
 
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+	padding: 40px 20px;
+}
+
+.skill-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 120px;
+}
+
+.skill-item i,
+.skill-item .ts-icon {
+	font-size: 3.5em;
+	margin-bottom: 15px;
+	color: #1e90ff; /* Deep blue color for all icons */
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.skill-item .ts-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.skill-item span {
+	font-size: 1em;
+	color: #333;
+	display: block;
+	margin-top: 5px;
+}
+
+.ts-icon {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: 2em;
+	background-color: #007acc;
+	color: white;
+	width: 1.5em;
+	height: 1.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
+
 #about {
 	background-image: url('../images/dan-maisey-gljkN5JyWdI-unsplash.jpg');
 }
@@ -189,6 +245,10 @@ a {
 }
 
 #contact {
+	background-image: url('https://images.unsplash.com/photo-1494043625957-ff6c03ea4206?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80');
+}
+
+#skills {
 	background-image: url('https://images.unsplash.com/photo-1494043625957-ff6c03ea4206?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80');
 }
 
@@ -479,4 +539,32 @@ input[type='submit'] {
 	#bio {
 		width: 100%;
 	}
+}
+
+.skills-subtitle {
+	text-align: center;
+	font-size: 2em;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	color: #333;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	padding-bottom: 15px;
+}
+
+.skills-subtitle::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 60px;
+	height: 3px;
+	background-color: #1e90ff;
+}
+
+#skills .content {
+	margin-bottom: 30px;
 }
