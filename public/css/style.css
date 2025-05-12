@@ -219,18 +219,49 @@ body {
 }
 
 /* Skills Section */
+.skills-categories {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	margin-top: 2rem; /* var(--space-5) */
+}
+
+.skill-category {
+	margin-bottom: 1rem;
+}
+
+.skill-category h4 {
+	font-family: 'Montserrat', system-ui, sans-serif;
+	font-size: 1.25rem;
+	color: var(--color-primary);
+	margin-bottom: 1rem;
+	text-align: left;
+	position: relative;
+	display: inline-block;
+}
+
+.skill-category h4::after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 40px;
+	height: 2px;
+	background: var(--color-primary);
+	border-radius: 2px;
+}
+
 .skills-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-	gap: 1.5rem; /* var(--space-4) */
-	margin-top: 2rem; /* var(--space-5) */
+	gap: 1rem; /* var(--space-3) */
 }
 
 .skill-item {
 	background: var(--card-background);
 	border: 1px solid rgba(100, 255, 218, 0.1);
 	color: var(--text-primary);
-	padding: 1.5rem; /* var(--space-4) */
+	padding: 1rem; /* var(--space-3) */
 	border-radius: 0.5rem; /* var(--border-radius) */
 	text-align: center;
 	box-shadow: var(--shadow-sm);
@@ -430,6 +461,11 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+	.header {
+		position: static;
+		background: var(--color-background);
+	}
+
 	.nav-container {
 		flex-direction: column;
 		height: auto;
@@ -452,27 +488,35 @@ body {
 		height: 200px;
 	}
 
+	main {
+		margin-top: 0;
+	}
+
 	.skills-grid {
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 	}
 
 	.project-image {
 		height: 150px;
 	}
 
-	/* Remove or adjust these if not using experience or education sections */
-	.experience-content,
-	.education-content {
-		padding: 0 0.5rem; /* var(--space-2) */
+	.project-content {
+		padding: 1rem;
+	}
+
+	.project-content h3 {
+		font-size: 1.25rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.project-content ul li {
+		font-size: 0.9rem;
+		margin-bottom: 0.5rem;
 	}
 
 	.project-content ul,
 	.experience-item ul {
 		padding-left: 1rem;
-	}
-
-	main {
-		margin-top: 10rem;
 	}
 }
 
